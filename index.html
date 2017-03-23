@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Calculadora </title>
+    </head>
+    <body>
+        <form name= "calculadora">
+        <script src="calculadora.js"></script>
+        <h1>Calculadora</h1>
+        <table>
+            <tr>
+                <td colspan="4"><input type= "text" id ="resultado" value =""></td><input id ="memoria"type="hidden" value ="0"/>
+            </tr> 
+            <tr>
+            <td><button onclick="calculadora.resultado.value +='1'" type ="button" id = "uno"style="width: 40px; height: 20px" value="1"> 1 </button></td>
+                <td><button onclick="calculadora.resultado.value +='2'" type ="button" id = "dos" style="width: 40px; height: 20px" value="2" > 2 </button></td>
+                <td><button onclick="calculadora.resultado.value +='3'" type ="button" id = "tres"style="width: 40px; height: 20px" value="3" > 3 </button></td>
+                <td><button onclick="calculadora.resultado.value +='+'" type ="button" id = "tres"style="width: 40px; height: 20px" value="+" > + </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculadora.resultado.value +='4'" type ="button" id = "cuatro"style="width: 40px; height: 20px"value="4"> 4 </button></td>
+                <td><button onclick="calculadora.resultado.value +='5'" type ="button" id = "cinco" style="width: 40px; height: 20px"value="5"> 5 </button></td>
+                <td><button onclick="calculadora.resultado.value +='6'" type ="button" id = "seis"style="width: 40px; height: 20px"value="6"> 6 </button></td>
+                <td><button onclick="calculadora.resultado.value +='-'" type ="button" id = "resta"style="width: 40px; height: 20px"value="-"> - </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculadora.resultado.value +='7'" type ="button" id = "siete"style="width: 40px; height: 20px"value="7"> 7 </button></td>
+                <td><button onclick="calculadora.resultado.value +='8'" type ="button" id = "ocho" style="width: 40px; height: 20px"value="8"> 8 </button></td>
+                <td><button onclick="calculadora.resultado.value +='9'" type ="button" id = "nueve"style="width: 40px; height: 20px"value="9"> 9 </button></td>
+                <td><button onclick="calculadora.resultado.value +='*'" type ="button" id = "multi"style="width: 40px; height: 20px"value="*"> * </button></td>
+            </tr>
+            <tr>
+                <td><button onclick="calculadora.resultado.value +='.'" type ="button" id = "punto"style="width: 40px; height: 20px" value="."> . </button></td>
+                <td><button onclick="calculadora.resultado.value +='0'" type ="button" id = "cero" style="width: 40px; height: 20px" value="0"> 0 </button></td>
+                <td><button onclick="calculadora.resultado.value= eval(calculadora.resultado.value)" type ="button" id = "igual"style="width: 40px; height: 20px" value="="> = </button></td>
+                <td><button onclick="calculadora.resultado.value +='/1'" type ="button" id = "divi"style="width: 40px; height: 20px" value="/" > / </button></td>
+            </tr>
+        </table>
+        </form>    
+    </body>
+</html>
